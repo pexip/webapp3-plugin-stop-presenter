@@ -16,6 +16,8 @@ whenever a presentation is being sent by another participant.
 
 Clicking this button will immediately stop the presentation.
 
+The plugin relies on the generic API request: `plugin.conference.sendRequest`. This function is not typed published plugin-api package.
+
 ## Run for development
 
 - To be able to build the plugin, you need to comply with the following versions

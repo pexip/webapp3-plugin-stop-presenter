@@ -1,4 +1,4 @@
-import { registerPlugin, type RPCCallPayload } from '@pexip/plugin-api'
+import { Button, InfinityParticipant, Participant, registerPlugin, type RPCCallPayload } from '@pexip/plugin-api'
 
 const plugin = await registerPlugin({
   id: 'stop-presenter',
@@ -12,11 +12,11 @@ const stopPresButtonPayload: RPCCallPayload<'ui:button:add'> = {
   roles: ['chair']
 }
 
-let stopPresButton: ToolbarButton | null = null
+let stopPresButton: Button<'toolbar'> | null = null
 let me: InfinityParticipant | null = null
 
 plugin.events.me.add(({ participant }) => {
-  me = participant
+  me = participant 
 })
 
 const stealPresentation = async (): Promise<void> => {
