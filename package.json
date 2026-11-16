@@ -1,13 +1,12 @@
 {
   "name": "plugin-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "test": "jest --detectOpenHandles --silent",
-    "lint": "eslint ."
+    "test": "jest --detectOpenHandles --silent"
   },
   "keywords": [],
   "author": "",
@@ -17,12 +16,8 @@
     "@pexip/plugin-api": "19.3.2"
   },
   "devDependencies": {
-    "eslint": "^8.1.0",
-    "eslint-config-love": "^47.0.0",
-    "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.3.0",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.12",
-    "vite-plugin-mkcert": "^1.17.5"
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vite-plugin-mkcert": "^2.1.0"
   }
 }
